@@ -1,0 +1,65 @@
+-- Building  Musicana DataBase  
+CREATE DATABASE Musicana_db ;
+
+
+-- 1) Musician
+CREATE Table Musicana(
+	Musicana_ID INT AUTO_INCREMENT  PRIMARY KEY ,
+    Name VARCHAR(120) NOT NULL , 
+    Street varchar(150) , 
+    City varchar(100) , 
+    Phone varchar(30) unique  NOT NULL 
+
+) ;
+
+
+-- 2)Instrument
+CREATE Table instrument (
+instrument_name VARCHAR(80) primary key , 
+musical_key 	VARCHAR(30) ); 
+
+
+-- 3)Album 
+CREATE Table album (
+ album_identifier INT PRIMARY KEY,
+  album_title      VARCHAR(200) NOT NULL,
+  copyright_date   DATE,
+  musician_id      INT, 
+  constraint fk_album_musician
+  foreign key (musician_id) REFERENCES  musician(musician_id) 
+  ON UPDATE CASCADE ON DELETE SET NULL );
+  
+  CREATE TABLE song (
+  song_title       VARCHAR(200) PRIMARY KEY,
+  author           VARCHAR(120),
+  album_identifier INT,
+  CONSTRAINT fk_song_album
+    FOREIGN KEY (album_identifier) REFERENCES album(album_identifier)
+    ON UPDATE CASCADE ON DELETE SET NULL
+);
+  
+-- 5) Play (Musician plays Instrument) — composite PK
+CREATE TABLE play (
+  musician_id     INT NOT NULL,
+  instrument_name VARCHAR(80) NOT NULL,
+  PRIMARY KEY (musician_id, instrument_name),
+  CONSTRAINT fk_play_musician
+    FOREIGN KEY (musician_id) REFERENCES musician(musician_id)
+    ON UPDATE CASCADE ON DELETE CASCADE,
+  CONSTRAINT fk_play_instrument
+    FOREIGN KEY (instrument_name) REFERENCES instrument(instrument_name)
+    ON UPDATE CASCADE ON DELETE RESTRICT
+) ;
+
+-- 6) Performs (Musician performs Song) — composite PK
+CREATE TABLE performs (
+  song_title  VARCHAR(200) NOT NULL,
+  musician_id INT NOT NULL,
+  PRIMARY KEY (song_title, musician_id),
+  CONSTRAINT fk_performs_song
+    FOREIGN KEY (song_title) REFERENCES song(song_title)
+    ON UPDATE CASCADE ON DELETE CASCADE,
+  CONSTRAINT fk_performs_musician
+    FOREIGN KEY (musician_id) REFERENCES musician(musician_id)
+    ON UPDATE CASCADE ON DELETE CASCADE
+) ;
