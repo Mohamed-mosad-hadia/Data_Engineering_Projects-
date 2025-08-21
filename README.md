@@ -1,59 +1,38 @@
-# 🚀 My Data Engineering Journey  
+# 🚀 **My Data Engineering Journey**  
 
 Welcome to my GitHub!  
-I’m **Mohamed Mosaad**, a Computer Science graduate and aspiring **Data Engineer** passionate about building reliable **data pipelines**, optimizing **ETL processes**, and creating **data-driven solutions**.
+I’m **Mohamed Mosaad**, a **Computer Science graduate** and aspiring **Data Engineer** passionate about building **reliable data pipelines**, optimizing **ETL processes**, and creating **data-driven solutions**.  
 
 ---
 
-## 🧾 Summary  
-- 🎓 **B.Sc. in Computer & Information Sciences** (2024) - Mansoura University  
-- 📜 **Data Engineering Track**: Completed intensive training covering **SQL, ETL, Data Warehousing, Python, and API integration**  
-- 💼 **Experience**:
-    - **Microsoft ML Engineer Internship (Next Academy)**: Built ML pipelines, explored MLOps, Hugging Face, and Azure AI  
-    - **Data Analyst at Elshawwa Trading Group**: Automated reporting, built dashboards, optimized inventory KPIs  
+## 📂 **MySQL Database Projects**  
+
+This repository contains multiple **database design and implementation projects** developed as part of my **data engineering journey**.  
+Each project follows a complete workflow:  
+
+✅ **Problem Analysis** – Understanding business requirements  
+✅ **Entity-Relationship Diagram (ERD)** – Designing relationships between entities  
+✅ **Normalization** – Applying 1NF, 2NF, 3NF for optimized schema  
+✅ **Implementation in MySQL** – Creating normalized tables, constraints, and relationships  
+✅ **Query Writing** – CRUD operations, joins, and complex reports  
 
 ---
 
-## 🛠 Skills & Tools  
-- **Programming**: Python, SQL, Bash  
-- **Databases**: MySQL  
-- **ETL Tools**: Informatica PowerCenter  
-- **Data Warehousing**: Dimensional Modeling, Data Normalization  
-- **Others**: Linux, Pandas, NumPy, Git, Power BI, API Integration  
+## 🛠 **Tools & Technologies**  
+- 🗄 **Database**: MySQL  
+- 🧩 **Modeling**: ERD diagrams (Draw.io, Lucidchart, etc.)  
+- 📐 **Normalization**: Up to **3NF**  
+- 💻 **Environment**: MySQL Workbench / Command Line  
 
 ---
 
-## 📂 Projects  
-### 🔹 **ETL Project**
-- Built a complete **ETL workflow** in Informatica including Slowly Changing Dimensions (SCD).  
-- **Tech Stack:** Informatica PowerCenter, MySQL  
-
-### 🔹 **Data Warehouse Project**
-- Designed and implemented a **Data Warehouse** for business reporting and analytics.  
-- **Tech Stack:** MySQL, Data Modeling  
-
-### 🔹 **Python Data Pipeline**
-- Developed a Python script to **extract**, **transform**, and **load** multi-source data into MySQL.  
-- **Tech Stack:** Python, Pandas, MySQL  
-
-### 🔹 **Linux Shell Automation**
-- Automated **server monitoring** tasks using custom shell scripts.  
-- **Tech Stack:** Linux, Bash  
+## ⭐ **What Makes These Projects Stand Out**  
+✔ Complete **Database Design Lifecycle**: *Problem → ERD → Normalization → Implementation → Queries*  
+✔ Focus on **best practices in relational database design**  
+✔ Real-world inspired **business use cases**  
 
 ---
 
-## 📖 Currently Learning  
-- Advanced **Data Engineering** concepts (Apache Airflow, Spark, Big Data)  
-- Cloud solutions (AWS, GCP)  
-
----
-
-## 🎯 Future Goals  
-- Build **end-to-end data pipelines** using Airflow & Spark  
-- Explore **Cloud Data Engineering**  
-
----
-
-## 📬 Connect with Me  
-- **LinkedIn:** [linkedin.com/in/mohamed-mosaad-hydia](https://linkedin.com/in/mohamed-mosaad-hydia)  
-- **GitHub:** [github.com/Mohamed-mosad-hadia](https://github.com/Mohamed-mosad-hadia)  
+## 📬 **Connect with Me**  
+🔗 **LinkedIn**: [linkedin.com/in/mohamed-mosaad-hydia](https://linkedin.com/in/mohamed-mosaad-hydia)  
+🐙 **GitHub**: [github.com/Mohamed-mosad-hadia](https://github.com/Mohamed-mosad-hadia)  
